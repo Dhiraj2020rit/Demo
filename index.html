@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brabu prints</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.convform.css">
+    <!--Chat bot script-->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.convform.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+<body>
+<!--Chat bot begins-->
+<div class="chat_icon" onclick="true">
+    <i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+<div class="chat_box">
+    <!--<img src="images/logo.png" width="50px" height="50px" alt="">-->
+    <div class="conv-form-wrapper">
+    <form action="" method="GET" class="hidden">
+        <select name="catogory" data-conv-question="Hello there How can I help you?">
+	    <option value="Contact"><a href="#contact">Contact Brabu prints</a></option>
+	    <option value="help">Need help</option>
+        <option value="projects">Project works</option>
+        <option value="queries">Enter Query</option>
+        </select>
+        <div data-conv-fork="catogory">
+	        <div data-conv-case="Contact">
+	 	        <input type="text" data-conv-question="Please enter your name">
+                <input type="email" data-conv-question="Please enter your email">
+                <input type="number" data-conv-question="Please enter your number">
+	        </div>
+            <div data-conv-case="help">
+	 	        <!--<input type="text" data-conv-question="How can I help you?">-->
+                <form action="" method="GET" class="hidden">
+                    <select name="catogory" data-conv-question="How can I help you?">
+                    <option value="tech">Technical</option>
+                    <option value="pi">Others</option>
+                    </select>
+                    <div data-conv-fork="catogory">
+                        <div data-conv-case="tech">
+                            <input type="text" data-conv-question="We will help you">
+                        </div>
+                        <div data-conv-case="pi">
+                            <input type="text" data-conv-question="We will contact you">
+                        </div>
+                    </div>
+                </form>
+	        </div>
+	        <div data-conv-case="projects">
+	 	        <input type="text" data-conv-question="Our projects" href="#Our products">
+	        </div>
+            <div data-conv-case="queries">
+	 	        <input type="text" data-conv-question="Please enter your Query" placeholder="Enter your Query here...">
+                 
+	        </div>
+	        </div>
+        </div>
+    </form>
+    </div>
+</div>
+<!--Chat bot ends-->
+
+ <!--Pop up message as contact-->
+<div class="container">
+        <div class="row">
+        <button id="close">&times;</button>
+        <form action="">
+            <h3>get in touch</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="name">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="number">
+            </div>
+            <input type="submit" value="contact now" class="btn">
+        </form>
+
+    </div>
+</div>
+<!--Pop up ends-->
+<!-- header section starts  -->
+<header class="header">
+    <a href="#" class="logo">
+        <img src="images/logo.png" width="100px" height="300px" alt="">
+    </a>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-bars" id="services-btn"></div>
+        <div href="#" class="fab fa-facebook-f"></div>
+        <div href="#" class="fab fa-twitter"></div>
+        <div href="#" class="fab fa-instagram"></div>
+        <div href="#" class="fab fa-linkedin"></div>
+        <div href="#" class="fab fa-pinterest"></div>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+</header>
+<!-- header section ends -->
+<!-- home section starts  -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>Brabu Prints</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat labore, sint cupiditate distinctio tempora reiciendis.</p>
+        <a href="#" class="btn">Know More</a>
+    </div>
+</section>
+<!-- home section ends -->
+<!-- about section starts  -->
+<section class="about" id="about">
+    <h1 class="heading"> <span>about</span> us </h1>
+    <div class="row">
+        <div class="image">
+            <img src="images/about-img.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Brabuprints</h3>
+            <h2>You Can Reach Us At</h2>
+            <p>Address</p>
+            <p>no 123 Lorem ipsum dolor sit amet, consectetur</p>
+            <a href="#" class="btn">Know more</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- about section ends -->
+<!-- services section starts  -->
+<section class="services" id="services">
+    <h1 class="heading"> our <span>services</span> </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="" alt="Soon uploded">
+            <h3>All size posters</h3>
+        </div>
+
+        <div class="box">
+            <img src="" alt="Soon uploded">
+            <h3>Book Printig</h3>
+        </div>
+
+        <div class="box">
+            <img src="" alt="Soon uploded"><!--services images 1,2,3,4-->
+            <h3>Stickers and Labels</h3>
+        </div>
+
+        <div class="box">
+            <img src="" alt="Soon uploded">
+            <h3>Danglers</h3>
+        </div>
+
+        <div class="box">
+            <img src="" alt="Soon uploded">
+            <h3>Invitation cards</h3>
+        </div>
+
+        <div class="box">
+            <img src="" alt="Soon uploded">
+            <h3>All types of calenders</h3>
+        </div>
+    </div>
+</section>
+<!-- services section ends -->
+<!-- products section starts -->
+<section class="products" id="products">
+    <h1 class="heading"> our <span>products</span> </h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+
+            <div class="image">
+                <img src="" alt="Upload soon">
+            </div>
+
+            <div class="content">
+                <h3>Upload soon</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>    
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="" alt="Upload soon">
+            </div>
+            <div class="content">
+                <h3>Upload soon</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">        
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+
+            <div class="image">
+                <img src="" alt="Upload soon">
+            </div>
+            
+            <div class="content">
+                <h3>Upload soon</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>    
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="products" id="products">
+    <h1 class="heading"> results <span></span> </h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="" alt="Upload soon">
+            </div>
+            <div class="content">
+                <h3>Upload soon</h3>
+                <h3>Business</h3>
+                <h2 style="color:#ffff">Brabu Prints provides the most innovative and customized business services in the industry. Our Services section shows how flexible we are for all types of budgets.</h2>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="" alt="Upload soon">
+            </div>
+            <div class="content">
+                <h3>Upload soon</h3>
+                <h3>Expertise</h3>
+                <h2 style="color:#ffff">We strive to achieve 100% customer satisfaction for both types of customers: hiring companies and job seekers. Types of customers: with huge potential.Our goal is to help your company achieve its full potential and establish long term stability for the stakeholders
+It's easy to get a quotation, just call our office anytime.Just fill out the form and we'll call you right away.We'll get back to you with an initial estimate soon
+Get ready to see results even after only 30 days
+Ask for a quote and start improving your business</h2>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="" alt="Upload soon">
+            </div>
+            <div class="content">
+                <h3>Upload soon</h3>
+                <h3>Quality</h3>
+                <h2 style="color:#ffff">High quality is on top of our list when it comes to the way we deliver the services
+
+Quality standards are important but meant to be exceeded
+
+Maximum impact is what we look for in our actions</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- products section ends -->
+<!-- review section starts  -->
+<section class="review" id="review">
+    <h1 class="heading"> customer's <span>review</span> </h1>
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p align = "center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+            <img src="images/pic-1.png" class="user" alt="">
+            <h3>Brajesh</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+            <img src="images/pic-2.png" class="user" alt="">
+            <h3>Dhiraj</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote"> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+            <img src="images/pic-3.png" class="user" alt="">
+            <h3>Vignesh</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <div class="row">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9382.779149636212!2d78.14004523321!3d8.803894399320106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b03ef9774172607%3A0xbad6cc22cf2dc488!2sBrabu%20Print!5e0!3m2!1sen!2sin!4v1633231022421!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <form action="">
+            <h3>get in touch</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="name">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="number">
+            </div>
+            <input type="submit" value="contact now" class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our <span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="" alt="Uploaded soon">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Blog 1</a>
+                <span>by admin / 21st may, 2021</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="" alt="Uploaded soon">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Blog 2</a>
+                <span>by admin / 21st may, 2021</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="" alt="Uploaded soon">    <!--Blog images-->
+            </div>
+            <div class="content">
+                <a href="#" class="title">Blog 3</a>
+                <span>by admin / 21st may, 2021</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+<!-- footer section starts  -->
+<section class="footer">
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+    <div class="links">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">services</a>
+        <a href="#">products</a>
+        <a href="#">review</a>
+        <a href="#">contact</a>
+        <a href="#">blogs</a>
+    </div>
+    
+</section>
+<!-- footer section ends -->
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
